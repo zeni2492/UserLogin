@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: Roboto,'sans-serif';
+    font-weight: 300;
+}
+
+h1{
+    font-family: Montserrat,'sans-serif';
+    font-weight: 300;
+}
+
+.inputStyle{
+    @apply bg-blue-200 py-2  outline-none px-4 w-full rounded-md text-lg
+}
+
+.ButtonHover{
+    @apply hover:bg-blue-400 hover:shadow-lg hover:text-white transition-all duration-300 hover:rounded-sm
+}
