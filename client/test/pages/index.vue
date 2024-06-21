@@ -1,7 +1,7 @@
 <template>
     <div class="w-full h-screen flex justify-center items-center">
-        <div class="w-3/4 rounded-md flex justify-center items-center shadow-lg">
-            <form action="" class="w-1/2 bg-slate-50 h-96 items-center flex justify-center">
+        <div class="LogInContainer w-3/4 rounded-md flex justify-center items-center shadow-lg">
+            <form  class="w-1/2 bg-slate-50 h-96 items-center flex justify-center">
                 <div class="w-4/6">
                     <h1 class="text-center text-4xl font-normal">Sign Up</h1>
                     <div class="text-3xl w-full mt-4 rounded-md">
@@ -17,7 +17,7 @@
                     </div>
                 </div>
             </form>
-            <div class="w-1/2 h-96 bg-blue-100 rounded-r-md flex justify-center font-bold text-5xl items-center">
+            <div class="Greetings w-1/2 h-96 bg-blue-100 rounded-r-md flex justify-center font-bold text-5xl items-center">
                 <h1>Welcome back</h1>
             </div>
         </div>
@@ -81,3 +81,25 @@ const LogIn = async () => {
     }
 }
 </script>
+
+<style>
+@media screen and (max-width: 650px) {
+    .LogInContainer {
+        flex-direction: column-reverse !important;
+        width: 400px;
+        height: 600px;
+    }
+    h1{
+        font-size: 20px !important;
+        height: 30px !important;
+    }
+    form{
+        width: 90% !important;
+    }
+
+    .Greetings{
+        width: 90% !important;
+        height: 120px;
+    }
+}
+</style>
